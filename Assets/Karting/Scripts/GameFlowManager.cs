@@ -73,16 +73,21 @@ public class GameFlowManager : MonoBehaviour
         loseDisplayMessage.gameObject.SetActive(false);
 
         m_TimeManager.StopRace();
-        foreach (ArcadeKart k in karts)
-        {
-			k.SetCanMove(false);
-        }
+        StartCoroutine(StopPlayers());
 
         //run race countdown animation
         ShowRaceCountdownAnimation();
         StartCoroutine(ShowObjectivesRoutine());
 
         StartCoroutine(CountdownThenStartRaceRoutine());
+    }
+
+    IEnumerator StopPlayers(){
+        yield return new WaitForSeconds(1.5f);
+        foreach (ArcadeKart k in karts)
+        {
+            k.SetCanMove(false);
+        }
     }
 
     IEnumerator CountdownThenStartRaceRoutine() {
