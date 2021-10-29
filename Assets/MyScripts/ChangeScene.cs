@@ -8,7 +8,9 @@ public class ChangeScene : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        Debug.Log(sceneName);
+        PlayerPrefs.SetString("SelectedLevel", sceneName);
+        SceneManager.LoadScene("Lobby");
     }
 
 

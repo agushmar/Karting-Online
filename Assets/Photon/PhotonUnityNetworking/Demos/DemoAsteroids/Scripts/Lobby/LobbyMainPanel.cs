@@ -269,11 +269,16 @@ namespace Photon.Pun.Demo.Asteroids
 
         public void OnStartGameButtonClicked()
         {
+            string levelName = (string)PhotonNetwork.CurrentRoom.CustomProperties["levelName"];
+            levelName = PlayerPrefs.GetString("SelectedLevel");
+            Hashtable hash = new Hashtable();
+            hash.Add("levelName", levelName);
+            PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.CurrentRoom.IsVisible = false;
-
+            Debug.Log(PlayerPrefs.GetString("SelectedLevel"));
             //PhotonNetwork.LoadLevel("DemoAsteroids-GameScene");
-            PhotonNetwork.LoadLevel("Select level");
+            PhotonNetwork.LoadLevel(PlayerPrefs.GetString("SelectedLevel"));
         }
 
         #endregion
