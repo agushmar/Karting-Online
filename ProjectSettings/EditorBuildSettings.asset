@@ -21,11 +21,11 @@ EditorBuildSettings:
     path: Assets/Karting/Scenes/Agus.unity
     guid: 452afa81515b8dc4d885ef4706602990
   - enabled: 1
+    path: Assets/Karting/Scenes/Mati.unity
+    guid: 477b55a49d308d14ab8b22141f004612
+  - enabled: 1
     path: Assets/Karting/Scenes/Ian.unity
     guid: 05a6faf58353ed844b3c0412dcbb3a4f
-  - enabled: 1
-    path: Assets/Karting/Scenes/Mati.unity
-    guid: 7f88bd1e2e789ce4197377a944e3de81
   - enabled: 1
     path: Assets/Karting/Scenes/Nacho.unity
     guid: c04c5f6334ed68147bb80742048e95ff
