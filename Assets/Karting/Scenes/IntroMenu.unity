@@ -372,6 +372,18 @@ MonoBehaviour:
           m_StringArgument: Credits
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 61764678}
+        m_TargetAssemblyTypeName: ReproducirSonido, Assembly-CSharp
+        m_MethodName: ReproducirClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &61764676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,10 +431,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 61764672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15f9cbee85dad1041a07cbe1e43ace67, type: 3}
+  m_Script: {fileID: 11500000, guid: e0b96be98e0f7234a9cd396aaa5a7b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: adc5931bcc5df7a408c57bdb2207f107, type: 3}
+  clip: {fileID: 8300000, guid: 3ac7a2c008a3b864abec8cd016f1715f, type: 3}
+  sonidoGenerico: {fileID: 5173403935709593973, guid: 79b397701694fa64794c8d28b6bd4b55,
+    type: 3}
 --- !u!1 &70769051
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +545,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -895,6 +921,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 129299360}
+        m_TargetAssemblyTypeName: ReproducirSonido, Assembly-CSharp
+        m_MethodName: ReproducirClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &129299357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,10 +993,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 129299354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15f9cbee85dad1041a07cbe1e43ace67, type: 3}
+  m_Script: {fileID: 11500000, guid: e0b96be98e0f7234a9cd396aaa5a7b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: adc5931bcc5df7a408c57bdb2207f107, type: 3}
+  clip: {fileID: 8300000, guid: 3ac7a2c008a3b864abec8cd016f1715f, type: 3}
+  sonidoGenerico: {fileID: 5173403935709593973, guid: 79b397701694fa64794c8d28b6bd4b55,
+    type: 3}
 --- !u!1 &160263376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1095,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 160263381}
+        m_TargetAssemblyTypeName: ReproducirSonido, Assembly-CSharp
+        m_MethodName: ReproducirClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &160263379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,10 +1154,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 160263376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15f9cbee85dad1041a07cbe1e43ace67, type: 3}
+  m_Script: {fileID: 11500000, guid: e0b96be98e0f7234a9cd396aaa5a7b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: adc5931bcc5df7a408c57bdb2207f107, type: 3}
+  clip: {fileID: 8300000, guid: 3ac7a2c008a3b864abec8cd016f1715f, type: 3}
+  sonidoGenerico: {fileID: 5173403935709593973, guid: 79b397701694fa64794c8d28b6bd4b55,
+    type: 3}
 --- !u!1 &247995403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2223,6 +2277,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1947208097}
+        m_TargetAssemblyTypeName: ReproducirSonido, Assembly-CSharp
+        m_MethodName: ReproducirClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1947208094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2285,10 +2351,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1947208091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15f9cbee85dad1041a07cbe1e43ace67, type: 3}
+  m_Script: {fileID: 11500000, guid: e0b96be98e0f7234a9cd396aaa5a7b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: adc5931bcc5df7a408c57bdb2207f107, type: 3}
+  clip: {fileID: 8300000, guid: 3ac7a2c008a3b864abec8cd016f1715f, type: 3}
+  sonidoGenerico: {fileID: 5173403935709593973, guid: 79b397701694fa64794c8d28b6bd4b55,
+    type: 3}
 --- !u!1 &1986983751
 GameObject:
   m_ObjectHideFlags: 0
