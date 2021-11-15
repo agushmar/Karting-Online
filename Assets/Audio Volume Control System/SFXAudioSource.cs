@@ -4,11 +4,11 @@
 public class SFXAudioSource : MonoBehaviour
 {
     AudioSource audioSource;
-    AudioSettings audioSettings;
+    Agus.ValoresAudio audioSettings;
 
     void Start()
     {
-        audioSettings = AudioSettings.audioSettings;
+        audioSettings = Agus.ValoresAudio.audioSettings;
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = audioSettings.GetSFXVolume();
         audioSettings.AddMeToSFXAudioSources(audioSource);

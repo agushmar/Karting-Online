@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using KartGame.KartSystems;
 using UnityEngine.SceneManagement;
-
+ 
 public enum GameState{Play, Won, Lost}
 
 public class GameFlowManager : MonoBehaviour
@@ -48,6 +48,8 @@ public class GameFlowManager : MonoBehaviour
     string m_SceneToLoad;
     float elapsedTimeBeforeEndScene = 0;
     bool isEndGame=false;
+
+    public float volumenGeneral;
 
     void Start()
     {
@@ -128,7 +130,8 @@ public class GameFlowManager : MonoBehaviour
 
                 float volumeRatio = Mathf.Abs(timeRatio);
                 float volume = Mathf.Clamp(1 - volumeRatio, 0, 1);
-                AudioUtility.SetMasterVolume(volume);
+                
+                AudioUtility.SetMasterVolume(volume * volumenGeneral );
 
                 // See if it's time to load the end scene (after the delay)
                 if (Time.time >= m_TimeLoadEndGameScene)

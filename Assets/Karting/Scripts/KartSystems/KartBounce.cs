@@ -41,6 +41,8 @@ namespace KartGame.KartSystems
         bool hasCollided;
         Vector3 reflectionVector;
 
+        public float volumenGeneral;
+
         void Start()
         {
             kart = GetComponent<ArcadeKart>();
@@ -87,7 +89,7 @@ namespace KartGame.KartSystems
 
                     if (BounceSound)
                     {
-                        AudioUtility.CreateSFX(BounceSound, transform.position, AudioUtility.AudioGroups.Collision, 0f);
+                        AudioUtility.CreateSFX(BounceSound, transform.position, AudioUtility.AudioGroups.Collision, 0f,volumenGeneral);
                     }
                     return;
                 }

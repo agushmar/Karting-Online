@@ -27,30 +27,46 @@ namespace KartGame.KartSystems
 
         ArcadeKart arcadeKart;
 
+        bool sonidoConfigurado = false;
+
+        float volumenGeneral;
+
         void Awake()
         {
             arcadeKart = GetComponentInParent<ArcadeKart>();
+            sonidoConfigurado = false;
         }
 
         void Update()
         {
             float kartSpeed     = arcadeKart != null ? arcadeKart.LocalSpeed() : 0.0f;
-            IdleSound.volume    = Mathf.Lerp(0.6f, 0.0f, kartSpeed * 4);
+            IdleSound.volume    = Mathf.Lerp(0.6f * volumenGeneral, 0.0f, kartSpeed * 4 );
 
             if (kartSpeed < 0.0f)
             {
                 // In reverse
                 RunningSound.volume = 0.0f;
-                ReverseSound.volume = Mathf.Lerp(0.1f, ReverseSoundMaxVolume, -kartSpeed * 1.2f);
+                ReverseSound.volume = Mathf.Lerp(0.1f, ReverseSoundMaxVolume*volumenGeneral, -kartSpeed * 1.2f);
                 ReverseSound.pitch = Mathf.Lerp(0.1f, ReverseSoundMaxPitch, -kartSpeed + (Mathf.Sin(Time.time) * .1f));
             }
             else
             {
                 // Moving forward
                 ReverseSound.volume = 0.0f;
-                RunningSound.volume = Mathf.Lerp(0.1f, RunningSoundMaxVolume, kartSpeed * 1.2f);
+                RunningSound.volume = Mathf.Lerp(0.1f, RunningSoundMaxVolume * volumenGeneral, kartSpeed * 1.2f);
                 RunningSound.pitch = Mathf.Lerp(0.3f, RunningSoundMaxPitch, kartSpeed + (Mathf.Sin(Time.time) * .1f));
             }
         }
+
+        public void AjustarVolumen(float volumen)
+        {
+
+            volumenGeneral = volumen;
+            StartSound.volume = volumen;
+            IdleSound.volume = volumen;
+            RunningSound.volume = volumen;
+            ReverseSound.volume = volumen;
+        }
+
     }
 }

@@ -18,11 +18,11 @@ public class UIElementInitializer : MonoBehaviour
         {
             case UIElementType.SFX_Slider:
                 slider = GetComponent<Slider>();
-                slider.value = AudioSettings.audioSettings.GetSFXVolume();
+                slider.value = Agus.ValoresAudio.audioSettings.GetSFXVolume();
                 break;
             case UIElementType.MUSIC_Slider:
                 slider = GetComponent<Slider>();
-                slider.value = AudioSettings.audioSettings.GetMusicVolume();
+                slider.value = Agus.ValoresAudio.audioSettings.GetMusicVolume();
                 break;
         }
 

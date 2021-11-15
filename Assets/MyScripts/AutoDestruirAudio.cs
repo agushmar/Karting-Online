@@ -9,6 +9,7 @@ public class AutoDestruirAudio : MonoBehaviour
     void Start()
     {
         audioS = GetComponent<AudioSource>();
+        audioS.volume= Agus.ValoresAudio.audioSettings.GetMusicVolume();
         Invoke("ActivarAutoDestruir",0.2f);
     }
 

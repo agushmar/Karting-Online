@@ -29,6 +29,22 @@ public class AudioUtility
         m_AudioManager.EnsureSFXDestruction(source);
     }
 
+    public static void CreateSFX(AudioClip clip, Vector3 position, AudioGroups audioGroup, float spatialBlend, float rolloffDistanceMin = 1f, float volume=1f)
+    {
+        GameObject impactSFXInstance = new GameObject("SFX_" + clip.name);
+        impactSFXInstance.transform.position = position;
+        AudioSource source = impactSFXInstance.AddComponent<AudioSource>();
+        source.clip = clip;
+        source.spatialBlend = spatialBlend;
+        source.minDistance = rolloffDistanceMin;
+        source.volume = volume;
+        source.Play();
+
+        source.outputAudioMixerGroup = GetAudioGroup(audioGroup);
+
+        m_AudioManager.EnsureSFXDestruction(source);
+    }
+
     public static AudioMixerGroup GetAudioGroup(AudioGroups group)
     {
         if (m_AudioManager == null)

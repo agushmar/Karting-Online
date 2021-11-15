@@ -24,7 +24,7 @@ public class PickupObject : TargetObject
     {
         if (CollectSound)
         {
-            AudioUtility.CreateSFX(CollectSound, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
+            AudioUtility.CreateSFX(CollectSound, transform.position, AudioUtility.AudioGroups.Pickup, 0f,0.5f);//revisar luego
         }
 
         if (spawnPrefabOnPickup)
