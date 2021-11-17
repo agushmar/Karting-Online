@@ -6880,7 +6880,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639302400}
   m_LocalRotation: {x: -0.003768383, y: 0.6998785, z: 0.0038457206, w: 0.71424174}
-  m_LocalPosition: {x: -1.004, y: 1.575, z: -32.23}
+  m_LocalPosition: {x: -1.022, y: 1.575, z: -32.23}
   m_LocalScale: {x: 18.425611, y: 1.0221918, z: 0.050923694}
   m_Children:
   - {fileID: 292415104}
@@ -18513,7 +18513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764172547}
   m_LocalRotation: {x: -0.003768383, y: 0.6998785, z: 0.0038457206, w: 0.71424174}
-  m_LocalPosition: {x: -0.563, y: 1.582, z: -33.01}
+  m_LocalPosition: {x: -0.551, y: 1.582, z: -33.01}
   m_LocalScale: {x: 17.307531, y: 1.0221918, z: 0.050923694}
   m_Children:
   - {fileID: 1419803986}
@@ -18717,6 +18717,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CookingOptions
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579282987820502318, guid: 941fac9249b6442cdb2d3f23472128e2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1579282987822437358, guid: 941fac9249b6442cdb2d3f23472128e2,
         type: 3}
