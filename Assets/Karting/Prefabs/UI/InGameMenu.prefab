@@ -759,8 +759,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+      - m_Target: {fileID: 8748962629888281736}
+        m_TargetAssemblyTypeName: Photon.Pun.ChangeScene2, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
@@ -768,7 +768,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Select level
+          m_StringArgument: IntroMenu
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 681629253371520420}
@@ -1661,7 +1661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5966370442915645294}
-  - component: {fileID: 5905994298541609164}
+  - component: {fileID: 8748962629888281736}
   m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
@@ -1683,7 +1683,7 @@ Transform:
   m_Father: {fileID: 8824232397177945068}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5905994298541609164
+--- !u!114 &8748962629888281736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -15,8 +15,15 @@ namespace Photon.Pun
         {
             Debug.Log(sceneName);
             PlayerPrefs.SetString("SelectedLevel", sceneName);
-            PhotonNetwork.Disconnect();
-            SceneManager.LoadScene("Lobby");
+            if (PhotonNetwork.IsConnected == true)
+            {
+                PhotonNetwork.Disconnect();
+            }
+            else
+            {
+                Debug.Log("no estoy conectado!!!");
+            }
+            SceneManager.LoadScene("Select Level");
         }
     }
 }
